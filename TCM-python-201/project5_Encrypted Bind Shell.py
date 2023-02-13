@@ -37,5 +37,23 @@ try:
 while True:
 s.send(b"\r\nEnter Command>
 
+"""
+project5 encrypted.py
+usage: project5_encrypted.py [ -h] [-1] [-c CONNECTI [ -k KEY]
+optional arguments:
+-h, --help   show this help message and exit
+-l,  --listen Setup a bind shell
+
+-c CONNECT,  --connect CONNECT
+                                             Connect to a bind shell
+
+-k KEY, - -key - -connect KEY  Encryption key
+
+
+ex: python project5_encrypted.py -l
+
+
+"""
+
 #only a screenshot to ocr in this time.
 #10 min of 27min.
