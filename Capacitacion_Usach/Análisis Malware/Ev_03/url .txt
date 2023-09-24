@@ -1,0 +1,37 @@
+Of course VX-Underground Malware Source Code
+hxxps://github.com/vxunderground/MalwareSourceCode
+
+But these resources are worth checking out too
+
+Malware Database
+hxxps://github.com/Endermanch/MalwareDatabase
+
+Another Great resource the Zoo
+hxxps://github.com/ytisf/theZoo
+
+Awesome Malware Analysis
+hxxps://github.com/rshipp/awesome-malware-analysis
+
+Trash Malwares
+hxxps://github.com/pankoza-pl/TrashMalwares
+
+Code of Malware I-II-III
+hxxps://github.com/OverTheNet/CODE_OF_MALWARE_I
+hxxps://github.com/OverTheNet/CODE_OF_MALWARE_II
+hxxps://github.com/OverTheNet/CODE_OF_MALWARE_III
+
+Rats Library
+hxxps://github.com/xchwarze/rats-library
+
+mas material:
+https://start.me/p/jj2KwQ/malware-analysis
+
+
+
+ejemplo de hoy:
+https://yaradbg.dev/
+
+https://github.com/Yara-Rules/rules/blob/3872244500f584491cde7c633f12f1f043a61c13/capabilities/capabilities.yar
+https://github.com/Yara-Rules/rules/blob/3872244500f584491cde7c633f12f1f043a61c13/crypto/crypto_signatures.yar
+
+
