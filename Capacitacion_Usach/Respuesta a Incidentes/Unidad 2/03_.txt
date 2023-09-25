@@ -1,0 +1,47 @@
+¿Qué es un PE header?
+¿Cuál es la función de un PE header?
+
+
+Cómo abrir un archivo ejecutable en HxD
+Menú Archivo
+Abrir
+
+El primer byte del PE header es el "MZ", que es el magic de un archivo ejecutable de DOS.
+El segundo byte del PE header es el "PE", que identifica el formato del archivo como PE.
+
+
+Abre un archivo ejecutable en HxD.
+Navega por las diferentes secciones del PE header utilizando las teclas de flecha.
+Utiliza las herramientas de visualización de HxD para visualizar el contenido de un campo.
+Compara dos PE headers utilizando la función "Compare" de HxD.
+Aquí hay un ejemplo de cómo puedes utilizar HxD para trabajar con la estructura de un PE header:
+
+Abre un archivo ejecutable en HxD.
+Utiliza las teclas de flecha para navegar a la sección "IMAGE_DOS_HEADER".
+Utiliza la herramienta de visualización de HxD para visualizar el contenido del campo "e_lfanew".
+Utiliza las teclas de flecha para navegar a la sección "IMAGE_NT_HEADERS".
+Utiliza la herramienta de visualización de HxD para visualizar el contenido del campo "Signature".
+Compara dos PE headers utilizando la función "Compare" de HxD.
+Esta práctica ayudará a los alumnos a comprender la estructura de un PE header y a utilizar un editor hexadecimal para analizar archivos ejecutables.
+
+
+
+Campo  //Descripción
+Magic	//Una secuencia de dos bytes que identifica el formato del archivo.
+Machine	//La arquitectura del procesador para la que se compila el archivo.
+Number of Sections	//El número de secciones en el archivo.
+TimeDateStamp	//La fecha y hora en que se creó el archivo.
+SizeOfOptionalHeader	//El tamaño del encabezado opcional.
+Characteristics	//Una serie de bits que indican las características del archivo.
+
+
+
+
+
+Lecturas de apoyo:
+
+
+
+
+
+

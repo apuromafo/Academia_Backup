@@ -1,0 +1,4 @@
+UNIDAD 1: MODELAMIENTO DEL CIBERATAQUE Y ADVERSARIO
+Sesión 1: Proceso de operaciones de respuesta a incidente ISO 27035-3
+Sesión 2: Fundamentos de TTP Mitre Attack®, Cyber Kill chain y modelamiento de la amenaza.
+

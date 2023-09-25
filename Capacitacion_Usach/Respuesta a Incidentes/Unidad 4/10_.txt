@@ -1,0 +1,58 @@
+Comenzar con una revisión de los informes de incidentes de referencia. Asegúrate de que los alumnos entiendan los diferentes tipos de informes de incidentes y cómo se utilizan.
+Explorar las diferencias entre los informes de incidentes técnicos y ejecutivos. Explica qué información debe incluirse en cada tipo de informe.
+ 
+
+Los informes de incidentes técnicos deben ser detallados y precisos. Deben incluir toda la información relevante sobre el incidente, incluida la causa, el impacto y las medidas de mitigación.
+Los informes de incidentes ejecutivos deben ser concisos y fáciles de entender. Deben centrarse en los aspectos más importantes del incidente y sus implicaciones para la organización.
+
+
+ Indicaciones ev.final.
+
+
+
+
+
+
+complemento:
+
+**** Informes de incidentes técnicos
+Los informes de incidentes técnicos deben ser detallados y precisos. Deben incluir toda la información relevante sobre el incidente, incluida la siguiente:
+
+* **Descripción del incidente:** Una descripción clara y concisa del incidente, que incluya los sistemas y datos afectados, así como los síntomas del incidente.
+* **Causa del incidente:** Una evaluación de la causa del incidente, que incluya los factores que contribuyeron al incidente.
+* **Impacto del incidente:** Una evaluación del impacto del incidente, que incluya los datos o sistemas perdidos o comprometidos, así como los costes asociados al incidente.
+* **Medidas de mitigación:** Un resumen de las medidas que se han tomado para mitigar el impacto del incidente.
+* **Recomendaciones:** Recomendaciones para evitar que el incidente se repita.
+
+
+Los  informes de incidentes técnicos pueden incluir información adicional, como la siguiente:
+
+* **Detalles técnicos:** Información técnica sobre el incidente, como los indicadores de compromiso (IOC), los registros de eventos y los datos forenses.
+* **Análisis forense:** Un análisis forense del incidente, que puede ayudar a identificar al atacante o a comprender cómo se produjo el incidente.
+* **Investigación de amenazas:** Una investigación de amenazas, que puede ayudar a identificar la amenaza que se utilizó para llevar a cabo el incidente.
+**** Informes de incidentes ejecutivos
+Los informes de incidentes ejecutivos deben ser concisos y fáciles de entender. Deben centrarse en los aspectos más importantes del incidente y sus implicaciones para la organización.
+
+Los informes de incidentes ejecutivos suelen incluir la siguiente información:
+
+* **Resumen ejecutivo:** Un resumen breve y conciso del incidente.
+* **Descripción del incidente:** Una descripción clara y concisa del incidente, que incluya los sistemas y datos afectados, así como los síntomas del incidente.
+* **Causa del incidente:** Una evaluación de la causa del incidente, que incluya los factores que contribuyeron al incidente.
+* **Impacto del incidente:** Una evaluación del impacto del incidente, que incluya los datos o sistemas perdidos o comprometidos, así como los costes asociados al incidente.
+* **Recomendaciones:** Recomendaciones para evitar que el incidente se repita.
+Además de esta información, los informes de incidentes ejecutivos pueden incluir información adicional, como la siguiente:
+
+* **Impacto financiero:** Una estimación del impacto financiero del incidente.
+* **Impacto reputacional:** Una evaluación del impacto reputacional del incidente.
+* **Impacto legal:** Una evaluación del impacto legal del incidente.
+**** Referencias de base
+Aquí hay algunas referencias de base que pueden ser útiles para los alumnos:
+
+* **NIST Special Publication 800-61: Computer Security Incident Handling Guide**
+* ** Guide to Incident Response**
+* **CERT/CC Incident Handling Handbook**
+* **SANS Incident Response Playbook**
+
+
+
+

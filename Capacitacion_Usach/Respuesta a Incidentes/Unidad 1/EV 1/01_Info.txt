@@ -155,6 +155,37 @@ Capacitación y desarrollo del equipo: La base de conocimientos también puede s
 
 
 
+
+Resumen:
+
+Sesión 1: Proceso de operaciones de respuesta a incidente ISO 27035-3
+
+Introducción a la respuesta a incidentes de seguridad
+
+Definición de respuesta a incidentes de seguridad:
+ La respuesta a incidentes de seguridad es el proceso de detección, análisis, contención, mitigación y recuperación de un incidente de seguridad.
+Objetivos de la respuesta a incidentes de seguridad:
+Minimizar los daños causados por un incidente de seguridad.
+Proteger los datos y sistemas afectados por un incidente de seguridad.
+Restaurar las operaciones normales lo antes posible.
+Ciclo de vida de un incidente de seguridad
+
+Fase de detección: Se identifica la existencia de un incidente de seguridad.
+Fase de análisis: Se determina la naturaleza y la gravedad del incidente de seguridad.
+Fase de contención: Se toman medidas para detener la propagación del incidente de seguridad.
+Fase de mitigación: Se toman medidas para reducir los daños causados por el incidente de seguridad.
+Fase de recuperación: Se restauran las operaciones normales.
+Proceso de operaciones de respuesta a incidente ISO 27035-3
+
+ISO 27035-3: Es una norma internacional que proporciona directrices para la implementación de un proceso de respuesta a incidentes de seguridad.
+Fases del proceso de ISO 27035-3:
+Planificación: Se desarrolla un plan de respuesta a incidentes.
+Ejecución: Se implementa el plan de respuesta a incidentes.
+Evaluación: Se evalúa el proceso de respuesta a incidentes.
+
+
+
+
 Lecturas recomendadas:
 
 

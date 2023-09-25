@@ -1,0 +1,63 @@
+Defensa en profundidad: Explica cómo la defensa en profundidad puede ayudar a proteger las organizaciones de los ataques.
+Piramide del dolor: Explica cómo la pirámide del dolor puede ayudar a los analistas a priorizar las acciones de respuesta.
+Proceso de threat hunter: Explica las diferentes etapas del proceso de threat hunter.
+
+Los indicadores de amenaza son evidencias o señales que indican la presencia o actividad de una amenaza o ataque.
+Los TTP son las técnicas y procedimientos que utilizan los atacantes para comprometer sistemas y redes.
+Los indicadores de amenaza pueden utilizarse para identificar los TTP utilizados por los atacantes.
+
+
+
+ ejemplos de IOA que se pueden extraer utilizando las técnicas anteriores:
+
+Análisis de malware:
+ Hashes de archivos maliciosos
+ Nombres de dominio utilizados por el malware
+ Direcciones IP utilizadas por el malware
+Análisis de registros:
+ Intentos de acceso no autorizado
+ Intentos de escalada de privilegios
+ Tráfico sospechoso
+
+Análisis de la red:
+ Patrones de tráfico anómalos
+ Uso de herramientas de explotación
+
+
+
+Para extraer un IOA, los analistas deben seguir los siguientes pasos:
+
+Identificar la fuente de datos: 
+El primer paso es identificar la fuente de datos que se va a utilizar para extraer el IOA. Las fuentes de datos comunes incluyen archivos de registro, tráfico de red y malware.
+Recopilar datos: 
+Una vez que se ha identificado la fuente de datos, se deben recopilar los datos necesarios. Los datos pueden recopilarse manualmente o utilizando herramientas de recopilación de datos.
+Analizar datos: 
+El siguiente paso es analizar los datos recopilados para identificar posibles IOA. El análisis puede realizarse manualmente o utilizando herramientas de análisis de IOA.
+Evaluar IOA: 
+Una vez que se han identificado posibles IOA, se deben evaluar para determinar su validez. La evaluación puede realizarse manualmente o utilizando herramientas de evaluación de IOA.
+
+
+Actividad
+Analizar un archivo ejecutable sospechoso utilizando un software de análisis de malware para identificar IOC.
+Analizar un archivo de registro de sistema para identificar IA.
+Analizar un archivo de tráfico de red para identificar TTP
+
+
+
+Apoyo:
+
+
+Libros:
+"Threat Hunting: The Complete Guide to Hunting Adversaries in Your Network"  
+"Malware Analysis" 
+"Incident Response: A Guide to Responding to Security Incidents"  
+Artículos:
+"How to Extract Indicators of Compromise" 
+"Indicators of Compromise (IOCs): A Comprehensive Guide"  
+"The Ultimate Guide to Indicators of Attack (IAOs)"  
+
+Herramientas:
+Yara: Una herramienta de detección de malware basada en reglas
+Sigma: Un lenguaje de reglas para la detección de amenazas
+MITRE ATT&CK: Un marco de conocimiento de tácticas, técnicas y procedimientos (TTP)
+

@@ -1,0 +1,84 @@
+ Los tipos de evidencia digital se pueden clasificar en las siguientes categorías:
+
+* **Evidencia física:** La evidencia física es evidencia que se puede tocar o ver. Ejemplos de evidencia física incluyen dispositivos, discos duros, dispositivos USB y papel.
+* **Evidencia digital:** La evidencia digital es evidencia que se almacena en formato electrónico. Ejemplos de evidencia digital incluyen archivos, registros, bases de datos y comunicaciones.
+Técnicas para recopilar evidencia digital
+Para recopilar evidencia digital, los analistas pueden utilizar una variedad de técnicas, como:
+
+* **Copias de seguridad:** Las copias de seguridad se pueden utilizar para crear copias de archivos y datos. Las copias de seguridad pueden ser utilizadas para restaurar los datos comprometidos o para analizarlos en busca de evidencia.
+* **Imagenes de disco:** Las imágenes de disco son copias exactas de discos duros o dispositivos de almacenamiento. Las imágenes de disco pueden ser utilizadas para analizar los datos en busca de evidencia sin modificar los datos originales.
+* **Recuperación de datos:** La recuperación de datos puede utilizarse para recuperar datos que han sido eliminados o dañados. La recuperación de datos puede ser utilizada para recuperar evidencia que no se puede obtener mediante otras técnicas.
+
+
+
+ejercicios:
+Ejercicio 1: Proporciona a los alumnos un dispositivo físico y pídeles que recopilen evidencia digital.
+Ejercicio 2: Proporciona a los alumnos un archivo o base de datos y pídeles que lo copien o creen una imagen de disco.
+Ejercicio 3: Utiliza una herramienta de recuperación de datos para recuperar datos eliminados de un dispositivo.
+
+
+La importancia de la cadena de custodia: La cadena de custodia es un registro de las personas que han tenido acceso a la evidencia digital. La cadena de custodia es importante para garantizar la integridad de la evidencia digital.
+
+Las leyes y regulaciones de privacidad: Los analistas deben cumplir con las leyes y regulaciones de privacidad al recopilar evidencia digital.
+
+
+
+la importancia de tener un playbook de respuesta
+
+
+ Ejemplo de cómo podría ser un playbook de respuesta a ransomware:
+
+Objetivos:
+
+Detectar y responder a un incidente de ransomware de manera efectiva.
+Minimizar el impacto del incidente en los sistemas y datos.
+Recuperar los sistemas y datos afectados.
+Procedimiento:
+
+Detección:
+
+Monitorear los sistemas y redes para detectar signos de ransomware.
+Utilizar herramientas de detección de ransomware para identificar el malware.
+Contención:
+
+Aislar los sistemas afectados para evitar la propagación del ransomware.
+Realizar una copia de seguridad de los sistemas afectados para restaurarlos en caso de que sea necesario.
+Investigación:
+
+Recopilar evidencia digital para identificar el malware y los atacantes.
+Analizar el malware para comprender su comportamiento.
+Recuperación:
+
+Eliminar el malware de los sistemas afectados.
+Restaurar los sistemas y datos afectados.
+Comunicaciones:
+
+Mantener a los usuarios y partes interesadas informados sobre el incidente.
+Documentación:
+
+Documentar todos los pasos del proceso de respuesta.
+Este es solo un ejemplo, y los playbooks de respuesta a malware pueden variar según las necesidades específicas de la organización.
+
+
+
+
+
+
+
+
+
+
+
+Ideas de herramientas:
+https://www.ibm.com/es-es/topics/incident-response
+
+
+La automatización de la respuesta a incidentes puede ayudar a los equipos de seguridad a ser más eficientes y efectivos.
+La automatización puede ayudar a reducir la fatiga de alerta y a acelerar la respuesta a los incidentes.
+La automatización puede ayudar a los equipos de seguridad a centrarse en tareas más complejas y estratégicas.
+
+
+
+
+
+

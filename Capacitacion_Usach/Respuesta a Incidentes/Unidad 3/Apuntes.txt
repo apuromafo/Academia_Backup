@@ -1,0 +1,4 @@
+UNIDAD 3: OPERACIONES PARA RESPUESTA A INCIDENTES
+Sesión 1: Reconocimiento de malware
+Sesión 2: Entendimiento de la amenaza en despliegue
+Sesión 3: Extracción de indicador de amenaza (IOA)

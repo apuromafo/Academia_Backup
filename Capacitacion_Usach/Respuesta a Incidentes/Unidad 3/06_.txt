@@ -1,0 +1,8 @@
+El papel del threat hunter en el reconocimiento de malware: El threat hunter es un profesional que se especializa en la identificación de malware nuevo y emergente. Los threat hunter utilizan una variedad de técnicas para identificar malware, incluyendo las técnicas que se han discutido en esta sesión.
+
+
+
+Las diferentes fuentes de malware: El malware puede propagarse a través de una variedad de fuentes, incluyendo el correo electrónico, las redes sociales, los sitios web y las descargas. Los analistas de malware deben estar familiarizados con las diferentes fuentes de malware para poder identificarlo.
+
+
+Los diferentes tipos de malware: El malware se puede clasificar en diferentes tipos, incluyendo virus, gusanos, troyanos y ransomware. Los analistas de malware deben estar familiarizados con los diferentes tipos de malware para poder identificarlo y responder a él.

@@ -1,0 +1,3 @@
+UNIDAD 4: REPORTE PARA RESPUESTA A INCIDENTES
+Sesión 1: Playbook de respuesta a incidente
+Sesión 2: Reporte de incidente técnico y ejecutivo.

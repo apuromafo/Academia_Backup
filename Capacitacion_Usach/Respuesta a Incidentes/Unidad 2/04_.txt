@@ -1,0 +1,39 @@
+Herramientas Nivel 1:
+Introducción al análisis de malware
+Herramientas de análisis de malware
+Herramientas de análisis de malware de nivel I
+
+
+ Herramientas de análisis estático:** Estas herramientas analizan el código de un archivo malware sin ejecutarlo.
+ Herramientas de análisis dinámico:** Estas herramientas ejecutan un archivo malware en un entorno controlado para analizar su comportamiento.
+ Herramientas de análisis forense:** Estas herramientas se utilizan para analizar datos forenses, como imágenes de memoria o archivos de registro.
+
+
+técnicas de análisis estático incluyen:
+
+Análisis de firmas: Esta técnica compara el código de un archivo sospechoso con una base de datos de firmas de malware conocidas.
+Análisis de código: Esta técnica examina el código de un archivo sospechoso en busca de características y comportamientos característicos del malware.
+Análisis de flujo de control: Esta técnica examina el flujo de control de un archivo sospechoso para identificar posibles comportamientos maliciosos.
+
+
+
+técnicas de análisis dinámico incluyen:
+
+Análisis de comportamiento: Esta técnica registra las acciones que realiza un malware cuando se ejecuta.
+Análisis de red: Esta técnica rastrea el tráfico de red generado por un malware.
+Análisis de sistema: Esta técnica registra los cambios que realiza un malware en el sistema operativo o en los archivos del sistema.
+
+
+técnicas de análisis forense incluyen:
+
+Análisis de memoria: Esta técnica examina la memoria de un sistema infectado para identificar rastros de malware.
+Análisis de registro: Esta técnica examina los registros del sistema para identificar rastros de malware.
+Análisis de archivos: Esta técnica examina los archivos de un sistema infectado para identificar rastros de malware.
+
+
+
+ideas de ejercicios N1:
+Ejercicio 1:  un archivo ejecutable sospechoso y  lo analicen utilizando HxD.
+Ejercicio 2:  un archivo ejecutable sospechoso y  lo analicen utilizando VirusTotal.
+Ejercicio 3:  un archivo ejecutable sospechoso y  lo analicen utilizando Process Monitor.
+Ejercicio 4:  un archivo ejecutable sospechoso y  lo analicen utilizando Wireshark.

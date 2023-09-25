@@ -1,0 +1,28 @@
+Herramientas Nivel 2:
+
+
+Técnicas de reconocimiento de malware
+A continuación, explicarás las diferentes técnicas de reconocimiento de malware. Estas técnicas se pueden clasificar en las siguientes categorías:
+
+ Técnicas de detección automática:** Estas técnicas utilizan software de detección de malware para identificar malware. 
+ Técnicas de detección manual:** Estas técnicas implican la revisión manual de los sistemas y los datos en busca de signos de malware.
+
+
+
+
+
+El software de detección de malware utiliza diferentes técnicas para identificar malware, como:
+
+Análisis de firmas: Esta técnica compara el código de un archivo con una base de datos de firmas de malware conocidas.
+Análisis de comportamiento: Esta técnica registra el comportamiento de un archivo para identificar comportamientos maliciosos.
+Análisis de aprendizaje automático: Esta técnica utiliza algoritmos de aprendizaje automático para identificar malware.
+
+
+
+
+La revisión manual puede incluir:
+
+Análisis de registros: Esta técnica examina los registros del sistema para identificar signos de malware.
+Análisis de archivos: Esta técnica examina los archivos del sistema en busca de signos de malware.
+Análisis de la red: Esta técnica examina el tráfico de red para identificar signos de malware.
+

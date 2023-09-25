@@ -1,0 +1,80 @@
+ 
+Recordar.
+Roles y responsabilidades de un CSIRT:
+
+Apoyo a las partes interesadas: El CSIRT debe proporcionar apoyo a las partes interesadas, como las organizaciones, los individuos y los organismos gubernamentales.
+
+Recolección y análisis de información: El CSIRT debe recopilar y analizar información sobre incidentes de seguridad.
+
+Respuesta a incidentes: El CSIRT debe responder a incidentes de seguridad.
+
+Educación y sensibilización: El CSIRT debe educar y sensibilizar a las partes interesadas sobre la seguridad cibernética.
+
+
+
+TTP es un acrónimo de Técnicas, Tácticas y Procedimientos. Es un marco de trabajo desarrollado por MITRE Corporation para describir los comportamientos de los atacantes.
+
+El marco TTP de MITRE se divide en cuatro categorías:
+
+Reconocimiento: El atacante recopila información sobre el objetivo.
+Preparación: El atacante instala herramientas y malware en el objetivo.
+Acceso inicial: El atacante obtiene acceso al objetivo.
+Ejecución: El atacante ejecuta su ataque.
+Persistencia: El atacante mantiene su acceso al objetivo.
+Evasión: El atacante evita ser detectado.
+Exfiltración: El atacante obtiene acceso a los datos o sistemas del objetivo.
+
+El marco TTP de MITRE es una herramienta valiosa para los equipos de seguridad cibernética. Puede ayudar a los equipos a comprender cómo operan los atacantes y a desarrollar estrategias de defensa más eficaces.
+
+
+
+
+La Cyber Kill Chain es un modelo de ataque cibernético desarrollado por Lockheed Martin. El modelo describe las siete etapas que siguen los atacantes para llevar a cabo un ataque cibernético exitoso.
+
+Las siete etapas de la Cyber Kill Chain son:
+
+Reconocimiento: El atacante recopila información sobre el objetivo.
+Armamento: El atacante desarrolla o adquiere las herramientas y el malware que utilizará en su ataque.
+Entrega: El atacante entrega el malware al objetivo.
+Explotación: El atacante aprovecha una vulnerabilidad en el sistema del objetivo para ejecutar el malware.
+Instalación: El malware se instala en el sistema del objetivo.
+Comando y control: El atacante obtiene acceso al malware instalado en el sistema del objetivo para controlarlo.
+Acciones en el objetivo: El atacante ejecuta comandos en el malware para robar datos, dañar sistemas o interrumpir operaciones.
+La Cyber Kill Chain es una herramienta valiosa para los equipos de seguridad cibernética. Puede ayudar a los equipos a comprender cómo operan los atacantes y a desarrollar estrategias de defensa más eficaces.
+
+
+
+El modelado de la amenaza es el proceso de comprender las capacidades, los objetivos y las motivaciones de los atacantes. Esto puede ayudar a los equipos de seguridad cibernética a desarrollar estrategias de defensa más eficaces.
+
+MITRE ATT&CK es una herramienta valiosa para el modelado de la amenaza. El marco ATT&CK proporciona una lista exhaustiva de las técnicas, tácticas y procedimientos (TTP) que utilizan los atacantes. Esto puede ayudar a los equipos de seguridad cibernética a identificar los riesgos a los que están expuestos sus organizaciones.
+
+El modelado de la amenaza con MITRE ATT&CK puede realizarse de varias maneras. 
+Una forma es utilizar la matriz MITRE ATT&CK. 
+La matriz ATT&CK organiza las TTP en función de las etapas del ciclo de vida de un ataque cibernético. 
+Esto puede ayudar a los equipos de seguridad cibernética a identificar los puntos débiles en sus defensas.
+
+
+Otra forma de realizar el modelado de la amenaza con MITRE ATT&CK es utilizar el MITRE ATT&CK Navigator.
+
+
+
+Bibliografía de apoyo
+https://www.paloaltonetworks.com/cyberpedia/what-is-mitre-attack-framework
+https://attack.mitre.org/docs/ATTACK_Design_and_Philosophy_March_2020.pdf
+
+
+Buenas prácticas
+Decreto 273 Chile
+https://csirt.gob.cl/media/2023/01/18GCS23-00010-01-Gui%CC%81a-Decreto-273.pdf
+
+
+https://blogdelciso.com/qu%C3%A9-es-un-playbook-de-respuesta-a-incidentes-de-ciberseguridad-5c5c9e9765fc
+
+
+
+Casos de estudio:
+"WannaCry Ransomware Attack"  
+"NotPetya Ransomware Attack" 
+"SolarWinds Orion Supply Chain Attack"  
+
+

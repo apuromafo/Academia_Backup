@@ -1,0 +1,44 @@
+Introducción
+La comprensión de la amenaza en despliegue permite a los analistas comprender el alcance de la infección y desarrollar una estrategia de respuesta efectiva.
+
+Componentes de la amenaza en despliegue
+ Estos componentes incluyen:
+
+* **El malware:** El malware es el componente principal de la amenaza en despliegue. Los analistas deben comprender el tipo de malware, las características y el comportamiento del malware para poder responder a él.
+
+* **El vector de infección:** El vector de infección es la forma en que el malware se propagó a la red. Los analistas deben comprender el vector de infección para poder cerrar la brecha de seguridad que permitió la infección.
+
+* **El impacto de la infección:** El impacto de la infección es el daño que el malware ha causado a la red. Los analistas deben comprender el impacto de la infección para poder priorizar las acciones de respuesta.
+
+
+Técnicas para comprender la amenaza en despliegue
+Para comprender la amenaza en despliegue, los analistas pueden utilizar una variedad de técnicas, como:
+
+* **Análisis del malware:** El análisis del malware implica el examen del código del malware para comprender su funcionamiento.
+* **Análisis de registros:** El análisis de registros implica la revisión de los registros del sistema para identificar signos de actividad maliciosa.
+* **Análisis de la red:** El análisis de la red implica la revisión del tráfico de red para identificar signos de actividad maliciosa.
+ 
+ejemplos de ejercicios
+Ejercicio 1: Valida un archivo ejecutable sospechoso y pídeles que lo analicen utilizando un software de análisis de malware.
+Ejercicio 2: Valida  un archivo de registro de sistema y pídeles que lo analicen para identificar signos de actividad maliciosa.
+Ejercicio 3: Valida  un archivo de tráfico de red y pídeles que lo analicen para identificar signos de actividad maliciosa.
+
+
+La importancia de la colaboración en la comprensión de la amenaza en despliegue: 
+La comprensión de la amenaza en despliegue requiere la colaboración de diferentes equipos, como el equipo de seguridad, el equipo de operaciones y el equipo de TI.
+El uso de herramientas de análisis de malware para comprender la amenaza en despliegue:
+ Las herramientas de análisis de malware pueden ayudar a los analistas a comprender el malware y su comportamiento.
+El uso de herramientas de análisis de registros para comprender la amenaza en despliegue:
+ Las herramientas de análisis de registros pueden ayudar a los analistas a identificar signos de actividad maliciosa en los registros del sistema.
+El uso de herramientas de análisis de la red para comprender la amenaza en despliegue: 
+Las herramientas de análisis de la red pueden ayudar a los analistas a identificar signos de actividad maliciosa en el tráfico de red.
+
+
+
+
+material apoyo.
+Libro: "Malware Analysis"  
+Artículo: "Understanding the Threat Landscape"  
+Sitio web: "Cisco Talos Intelligence"
+Video: "How to Analyze Malware"  
+
