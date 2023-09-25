@@ -6,7 +6,7 @@ implementador-equipo-de-respuesta-a-ciber-incidentes-csirt/
 
 El estudiante al finalizar el curso será capaz de:
 
-01_Caracterizar el proceso, roles y funciones de un CSIRT
+Caracterizar el proceso, roles y funciones de un CSIRT
 Comprender los elementos claves del modelo de amenazas
 Identificar las diversas herramientas de MITRE para los CSIRT
 Identificar las características y estructuras del malware
