@@ -1,5 +1,5 @@
 # Analysis_malware
 Malware Analysis
 
-Enlaces guardados para un curso v2023.
+Enlaces guardados para un curso 
 Creado con fines académicos.
