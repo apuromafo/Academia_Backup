@@ -1,0 +1,7 @@
+NOGAI (Normas Globales de Auditoría Interna): Guían la ejecución profesional de auditorías internas. Plantean un proceso basado en riesgos, alineado a objetivos estratégicos, y establecen fases como planificación, documentación y recomendación. Nueva versión vigente para 2024, más clara y alineada a la generación de valor.
+
+NIA (Normas Internacionales de Auditoría): Regulan cómo deben realizarse las auditorías externas de estados financieros. Incluyen procedimientos sobre riesgos, pruebas, documentación y elaboración de informes de auditoría. Ejemplos: NIA 200, 230, 540, 700, entre otras.
+
+
+
+NOGAI regula auditoría interna, NIA la financiera externa, y el pentesting es autónomo pero puede reforzar los controles de las primeras. Hay sinergias, pero no equivalencia directa en la práctica profesional
