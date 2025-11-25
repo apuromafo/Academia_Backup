@@ -1,10 +1,27 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+import sys
+from operator import itemgetter
+
+# --- Definiciones de Colores ANSI ---
+# Estos códigos permiten colorear la salida en la terminal sin librerías externas.
+ANSI_RESET = '\033[0m'
+ANSI_BOLD = '\033[1m'
+ANSI_GRAY = '\033[90m'
+
+# Asignación de colores por Categoría
+# R: Regulación (Rojo Brillante), E: Estándar (Verde Brillante), 
+# A: Auditoría (Amarillo Brillante), M: Marco (Cyan Brillante)
+COLOR_MAP = {
+    "R": '\033[91m', # Bright Red
+    "E": '\033[92m', # Bright Green
+    "A": '\033[93m', # Bright Yellow
+    "M": '\033[96m', # Bright Cyan
+}
 
 def obtener_datos_regulaciones_final():
-    """Devuelve la lista completa de 45 entradas con enlaces corregidos a los portales principales."""
-    # Categorías: 
-    # R (Regulación Legal/Contractual), E (Estándar Técnico/Seguridad), 
+    """Devuelve la lista completa de 45 entradas de regulaciones, estándares y marcos."""
+    # Categorías: R (Regulación Legal/Contractual), E (Estándar Técnico/Seguridad), 
     # A (Auditoría/Evaluación), M (Marco de Gestión/Gobierno)
     return [
         {"Valor": 1, "Regulación": "Payment Card Industry Data Security Standard", "Acrónimo": "PCI DSS", "Alcance": "International", "Categoría": "R", "Descripción": "Estándar de seguridad de la información requerido por las principales marcas de tarjetas de pago (Visa, MasterCard, etc.) para todas las entidades que almacenan, procesan o transmiten datos de titulares de tarjetas.", "URL": "https://www.pcisecuritystandards.org/"},
@@ -60,52 +77,84 @@ def obtener_datos_regulaciones_final():
         {"Valor": 45, "Regulación": "Mobile Application Security Verification Standard", "Acrónimo": "MASVS", "Alcance": "International", "Categoría": "E", "Descripción": "Estándar de requisitos de seguridad para aplicaciones móviles (iOS y Android). Proporciona una base para pruebas de penetración móvil.", "URL": "https://owasp.org/www-project-mobile-application-security-verification-standard/"},
     ]
 
-def imprimir_ofensivas_detalladas(regulaciones):
-    """
-    Filtra e imprime solo las regulaciones de Seguridad Ofensiva con los enlaces corregidos.
-    """
-    
-    # IDs y Acrónimos relevantes para seguridad ofensiva
-    ids_ofensivos = [40, 41, 44, 22, 45, 24, 43]
-    
-    # Filtrar la lista
-    ofensivas = [reg for reg in regulaciones if reg["Valor"] in ids_ofensivos]
-    
-    # Mapeo para forzar un orden de impresión lógico (Metodologías A primero, luego Estándares E)
-    orden_forzado = {
-        'A': 1, # PTES, OSSTMM, TIBER-EU
-        'E': 2  # OWASPs, ATT&CK
+def obtener_nombre_categoria(acronimo_cat):
+    """Devuelve el nombre completo de la categoría."""
+    mapping = {
+        "R": "Regulación Legal/Contractual",
+        "E": "Estándar Técnico/Seguridad",
+        "A": "Auditoría/Evaluación/Metodología Pentest",
+        "M": "Marco de Gestión/Gobierno de TI"
     }
+    return mapping.get(acronimo_cat, "Desconocido")
 
-    print("\n" + "="*80)
-    print("🔪 METODOLOGÍAS Y ESTÁNDARES DE SEGURIDAD OFENSIVA (Pentesting y Red Teaming)")
-    print("="*80)
+def imprimir_tabla(datos):
+    """
+    Imprime los datos ordenados y con colores usando códigos ANSI.
+    """
+    if not datos:
+        print("No hay datos para mostrar.")
+        return
+
+    # 1. Ordenar los datos: Primero por Categoría, luego alfabéticamente por Acrónimo
+    # Utilizar 'Categoría' como clave de orden principal y 'Acrónimo' como clave secundaria.
+    datos_ordenados = sorted(datos, key=itemgetter('Categoría', 'Acrónimo'))
+
+    # Título principal
+    print(ANSI_BOLD + "\n--- Catálogo de Regulaciones, Estándares y Marcos de Ciberseguridad ---" + ANSI_RESET)
     
-    # Ordenar por la categoría forzada y luego por ID
-    ofensivas_ordenadas = sorted(ofensivas, key=lambda x: (orden_forzado.get(x['Categoría'], 99), x['Valor']))
+    # Leyenda de Colores
+    print("\n" + ANSI_BOLD + "Leyenda de Categorías:" + ANSI_RESET)
+    leyenda_parts = []
+    for acr, color in COLOR_MAP.items():
+        nombre = obtener_nombre_categoria(acr)
+        leyenda_parts.append(f"{color}{ANSI_BOLD}{acr}{ANSI_RESET} ({nombre})")
+    print(" | ".join(leyenda_parts))
+    print("-" * 100)
+
+    # Variables para control de agrupamiento por categoría
+    categoria_actual = None
+    # Contador para la numeración secuencial de las entradas impresas
+    entry_number = 0
     
-    
-    print("\n### 📋 Metodologías de Ejecución de Ataques y Evaluación (Categoría A) ###")
-    print("-" * 50)
-    
-    for reg in ofensivas_ordenadas:
-        acronimo = f" ({reg['Acrónimo']})" if reg.get('Acrónimo') else ""
+    for item in datos_ordenados:
+        categoria = item["Categoría"]
+        acronimo = item["Acrónimo"]
+        regulacion = item["Regulación"]
+        alcance = item["Alcance"]
+        descripcion = item["Descripción"]
+        url = item["URL"]
+        color = COLOR_MAP.get(categoria, ANSI_RESET) # Obtiene el color de la categoría
+
+        # Imprime el encabezado de la categoría si cambia
+        if categoria != categoria_actual:
+            nombre_cat = obtener_nombre_categoria(categoria)
+            # Reutilizo el cálculo de la longitud de la lista para el título de la categoría
+            categoria_count = len([d for d in datos if d['Categoría'] == categoria])
+            print(f"\n{ANSI_BOLD}{color}>>> {categoria} - {nombre_cat} ({categoria_count} Entradas){ANSI_RESET}\n" + "=" * 100)
+            categoria_actual = categoria
+
+        # Formato de la entrada
+        # 2. Agregar el número secuencial (ej. 01., 02., etc.)
+        entry_number += 1
+        # Línea de Acrónimo y Regulación (destacada)
+        print(f"{ANSI_BOLD}{entry_number:02d}.{ANSI_RESET} {color}{ANSI_BOLD}[{acronimo}]{ANSI_RESET} {regulacion}")
         
-        # Separar el bloque de Estándares/Controles
-        if reg['Categoría'] == 'E' and reg['Valor'] == 22:
-            print("\n### 🛡️ Guías Técnicas de Verificación y Conocimiento Adversario (Categoría E) ###")
-            print("-" * 50)
-            
-        print(f"**{reg['Valor']}. {reg['Regulación']}{acronimo}**")
-        print(f"  * **Alcance:** {reg['Alcance']}")
-        print(f"  * **Categoría:** {reg['Categoría']}")
-        print(f"  * **Descripción:** {reg['Descripción']}")
-        print(f"  * **URL (Portal):** {reg['URL']}")
+        # Línea de Alcance y Categoría (en gris)
+        print(f"{ANSI_GRAY}  Alcance: {alcance} | Categoría: {categoria}{ANSI_RESET}")
+        
+        # Línea de Descripción
+        print(f"  Descripción: {descripcion}")
+        
+        # Línea de URL
+        print(f"  URL: {url}\n")
+        
+        # Separador ligero entre entradas
         print("-" * 50)
 
+
 if __name__ == "__main__":
-    datos = obtener_datos_regulaciones_final()
-    
-    print("--- INICIO DE LA SALIDA FILTRADA: SEGURIDAD OFENSIVA (Enlaces Corregidos) ---")
-    imprimir_ofensivas_detalladas(datos)
-    print("--- FIN DE LA SALIDA FILTRADA ---")
+    try:
+        data = obtener_datos_regulaciones_final()
+        imprimir_tabla(data)
+    except Exception as e:
+        print(f"Ocurrió un error: {e}", file=sys.stderr)
