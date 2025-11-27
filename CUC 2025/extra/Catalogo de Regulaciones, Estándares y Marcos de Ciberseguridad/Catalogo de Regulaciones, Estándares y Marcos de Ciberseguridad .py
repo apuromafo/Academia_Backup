@@ -11,7 +11,7 @@ ANSI_GRAY = '\033[90m'
 
 # Asignación de colores por Categoría
 # R: Regulación (Rojo Brillante), E: Estándar (Verde Brillante), 
-# A: Auditoría (Amarillo Brillante), M: Marco (Cyan Brillante)
+# A: Auditoría/Metodología (Amarillo Brillante), M: Marco de Gestión (Cyan Brillante)
 COLOR_MAP = {
     "R": '\033[91m', # Bright Red
     "E": '\033[92m', # Bright Green
@@ -20,9 +20,15 @@ COLOR_MAP = {
 }
 
 def obtener_datos_regulaciones_final():
-    """Devuelve la lista completa de 45 entradas de regulaciones, estándares y marcos."""
+    """Devuelve la lista completa de regulaciones, estándares y marcos (49 entradas)."""
     # Categorías: R (Regulación Legal/Contractual), E (Estándar Técnico/Seguridad), 
-    # A (Auditoría/Evaluación), M (Marco de Gestión/Gobierno)
+    # A (Auditoría/Evaluación/Metodología Pentest), M (Marco de Gestión/Gobierno)
+    # 
+    # Se han añadido nuevas entradas (46 a 49) para cubrir:
+    # - FISMA (Regulación Federal de EE. UU.)
+    # - RMF (Marco de Gestión de Riesgos de NIST)
+    # - DORA (Regulación de Resiliencia Digital de la UE)
+    # - CSA CCM (Marco de Controles de Seguridad en la Nube)
     return [
         {"Valor": 1, "Regulación": "Payment Card Industry Data Security Standard", "Acrónimo": "PCI DSS", "Alcance": "International", "Categoría": "R", "Descripción": "Estándar de seguridad de la información requerido por las principales marcas de tarjetas de pago (Visa, MasterCard, etc.) para todas las entidades que almacenan, procesan o transmiten datos de titulares de tarjetas.", "URL": "https://www.pcisecuritystandards.org/"},
         {"Valor": 2, "Regulación": "Health Insurance Portability and Accountability Act", "Acrónimo": "HIPAA", "Alcance": "United States", "Categoría": "R", "Descripción": "Protege la información de salud protegida (**PHI**). Establece estándares para las transacciones electrónicas de atención médica y requiere salvaguardas de seguridad y privacidad para la información de salud individual.", "URL": "https://www.hhs.gov/hipaa/index.html"},
@@ -44,13 +50,13 @@ def obtener_datos_regulaciones_final():
         {"Valor": 18, "Regulación": "Supply Chain Levels for Software Artifacts", "Acrónimo": "SLSA", "Alcance": "International", "Categoría": "E", "Descripción": "Marco de seguridad para la cadena de suministro de software.", "URL": "https://slsa.dev/"},
         {"Valor": 19, "Regulación": "NIST Secure Software Development Framework", "Acrónimo": "SSDF", "Alcance": "United States", "Categoría": "E", "Descripción": "Marco NIST (SP 800-218) que recomienda prácticas para reducir las vulnerabilidades en el *software*.", "URL": "https://csrc.nist.gov/projects/ssdf"},
         {"Valor": 20, "Regulación": "CIS Controls & Benchmarks", "Acrónimo": "CIS Benchmark", "Alcance": "International", "Categoría": "E", "Descripción": "Un conjunto de 18 salvaguardas de seguridad priorizadas y guías de configuración segura (Benchmarks).", "URL": "https://www.cisecurity.org/"},
-        {"Valor": 21, "Regulación": "NIST Cybersecurity Framework", "Acrónimo": "CSF", "Alcance": "United States", "Categoría": "E", "Descripción": "Guía voluntaria para gestionar y reducir el riesgo de ciberseguridad.", "URL": "https://www.nist.gov/cyberframework"},
+        {"Valor": 21, "Regulación": "NIST Cybersecurity Framework", "Acrónimo": "CSF", "Alcance": "United States", "Categoría": "E", "Descripción": "Guía voluntaria para gestionar y reducir el riesgo de ciberseguridad. Organizado en cinco funciones clave: Identificar, Proteger, Detectar, Responder y Recuperar.", "URL": "https://www.nist.gov/cyberframework"},
         {"Valor": 22, "Regulación": "OWASP Application Security Verification Standard", "Acrónimo": "ASVS", "Alcance": "International", "Categoría": "E", "Descripción": "**Estándar detallado de requisitos de seguridad para aplicaciones web.** Proporciona una base para probar cualquier control técnico y asegura la seguridad durante el SDLC.", "URL": "https://owasp.org/www-project-application-security-verification-standard/"},
         {"Valor": 23, "Regulación": "OWASP Top 10", "Acrónimo": "OWASP T10", "Alcance": "International", "Categoría": "E", "Descripción": "Documento de concienciación sobre los 10 riesgos de seguridad más críticos para las aplicaciones web.", "URL": "https://owasp.org/www-project-top-ten/"},
         {"Valor": 24, "Regulación": "OWASP API Security Top 10", "Acrónimo": "OWASP API T10", "Alcance": "International", "Categoría": "E", "Descripción": "Documento de concienciación centrado en los 10 riesgos de seguridad más críticos específicos para las Interfaces de Programación de Aplicaciones (**API**).", "URL": "https://owasp.org/www-project-api-security/"},
         {"Valor": 25, "Regulación": "California Consumer Privacy Act", "Acrónimo": "CCPA", "Alcance": "US (California)", "Categoría": "R", "Descripción": "Otorga a los consumidores derechos sobre sus datos personales.", "URL": "https://oag.ca.gov/privacy/ccpa"},
         {"Valor": 26, "Regulación": "California Privacy Rights Act", "Acrónimo": "CPRA", "Alcance": "US (California)", "Categoría": "R", "Descripción": "Expande y modifica la CCPA, estableciendo la Agencia de Protección de la Privacidad de California (CPPA).", "URL": "https://cppa.ca.gov/"},
-        {"Valor": 27, "Regulación": "NIST Special Publication 800-53", "Acrónimo": "NIST 800-53", "Alcance": "US (Federal)", "Categoría": "E", "Descripción": "Catálogo de controles de seguridad y privacidad recomendados para sistemas de información federales.", "URL": "https://csrc.nist.gov/pubs/sp/800/53/r5/final"},
+        {"Valor": 27, "Regulación": "NIST Special Publication 800-53", "Acrónimo": "NIST 800-53", "Alcance": "US (Federal)", "Categoría": "E", "Descripción": "Catálogo de controles de seguridad y privacidad recomendados para sistemas de información federales. Su uso es **mandatario** bajo la ley FISMA.", "URL": "https://csrc.nist.gov/pubs/sp/800/53/r5/final"},
         {"Valor": 28, "Regulación": "Cybersecurity Maturity Model Certification", "Acrónimo": "CMMC", "Alcance": "US (DoD)", "Categoría": "R", "Descripción": "Marco de certificación de seguridad para contratistas del Departamento de Defensa de EE. UU. (DoD).", "URL": "https://dodcio.defense.gov/CMMC/"},
         {"Valor": 29, "Regulación": "Lei Geral de Proteção de Dados", "Acrónimo": "LGPD", "Alcance": "Brazil", "Categoría": "R", "Descripción": "Ley brasileña de protección de datos personales que regula el tratamiento de datos, similar al GDPR.", "URL": "http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm"},
         {"Valor": 30, "Regulación": "Australian Prudential Regulation Authority", "Acrónimo": "APRA", "Alcance": "Australia", "Categoría": "R", "Descripción": "Estándares y directrices que cubren la gestión de riesgos de seguridad de la información para entidades financieras y de seguros.", "URL": "https://www.apra.gov.au/cross-industry-supervision/cyber-resilience"},
@@ -75,6 +81,12 @@ def obtener_datos_regulaciones_final():
         {"Valor": 43, "Regulación": "Adversarial Tactics, Techniques, and Common Knowledge", "Acrónimo": "ATT&CK", "Alcance": "International", "Categoría": "E", "Descripción": "Marco de conocimiento global de MITRE que enumera y describe las tácticas y técnicas adversarias (Red Teaming y Detección).", "URL": "https://attack.mitre.org/"},
         {"Valor": 44, "Regulación": "Threat Intelligence-based Ethical Red Teaming", "Acrónimo": "TIBER-EU", "Alcance": "European Union", "Categoría": "A", "Descripción": "Marco Europeo que guía el Red Teaming basado en inteligencia de amenazas para las entidades financieras.", "URL": "https://www.ecb.europa.eu/paym/html/tiber-eu.en.html"},
         {"Valor": 45, "Regulación": "Mobile Application Security Verification Standard", "Acrónimo": "MASVS", "Alcance": "International", "Categoría": "E", "Descripción": "Estándar de requisitos de seguridad para aplicaciones móviles (iOS y Android). Proporciona una base para pruebas de penetración móvil.", "URL": "https://owasp.org/www-project-mobile-application-security-verification-standard/"},
+        
+        # --- Nuevas Entradas Adicionales (46 a 49) ---
+        {"Valor": 46, "Regulación": "Federal Information Security Modernization Act", "Acrónimo": "FISMA", "Alcance": "US (Federal)", "Categoría": "R", "Descripción": "Ley federal de EE. UU. que requiere que las agencias federales y sus contratistas implementen programas de seguridad de la información. **Manda el uso de estándares NIST** como el SP 800-53.", "URL": "https://www.cisa.gov/fisma"},
+        {"Valor": 47, "Regulación": "NIST Special Publication 800-37 (Risk Management Framework)", "Acrónimo": "RMF", "Alcance": "US (Federal)", "Categoría": "M", "Descripción": "Define el enfoque sistemático (6 pasos: Preparar, Categorizar, Seleccionar, Implementar, Evaluar, Autorizar y Monitorear) para integrar la gestión de riesgos de seguridad y privacidad en el ciclo de vida de los sistemas de información federales. [Image of NIST Risk Management Framework]", "URL": "https://csrc.nist.gov/pubs/sp/800/37/r2/final"},
+        {"Valor": 48, "Regulación": "Digital Operational Resilience Act", "Acrónimo": "DORA", "Alcance": "European Union", "Categoría": "R", "Descripción": "Regulación de la UE que establece requisitos uniformes de **resiliencia operativa digital** para el sector financiero, incluyendo la gestión de riesgos de las TIC de terceros (proveedores cloud).", "URL": "https://finance.ec.europa.eu/digital-finance/digital-operational-resilience-act-dora_en"},
+        {"Valor": 49, "Regulación": "Cloud Security Alliance Cloud Controls Matrix", "Acrónimo": "CSA CCM", "Alcance": "International", "Categoría": "E", "Descripción": "Marco de controles de ciberseguridad específico para la computación en la nube. Proporciona una matriz de 197 controles y mapeos a múltiples regulaciones y estándares (ISO 27001, COBIT, HIPAA, etc.).", "URL": "https://cloudsecurityalliance.org/research/cloud-controls-matrix/"},
     ]
 
 def obtener_nombre_categoria(acronimo_cat):
