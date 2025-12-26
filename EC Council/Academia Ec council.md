@@ -1,48 +1,49 @@
  
 
-EC-Council 
-International Council of E-Commerce Consultants (EC-Council) es una organización transnacional de certificación y formación en ciberseguridad. Su función principal es la creación de estándares de competencia para roles técnicos y de gestión de seguridad.
+# EC-Council: Estándares Globales en Ciberseguridad
 
-1. Certificaciones Clave y Aplicabilidad
-Su catálogo se divide en dominios de especialización técnica:
+El **International Council of E-Commerce Consultants (EC-Council)** es una organización transnacional dedicada a la normalización de competencias en seguridad de la información. Su función técnica principal es la creación de estándares de certificación para perfiles de ejecución técnica y gestión estratégica.
 
-CEH (Certified Ethical Hacker): Su estándar más reconocido. Se enfoca en las 5 fases del hacking (Reconocimiento, Escaneo, Acceso, Mantenimiento y Borrado de huellas). Basado en herramientas y metodología ofensiva.
+## 1. Ecosistema de Certificaciones
 
-CHFI (Computer Hacking Forensic Investigator): Análisis forense digital, recuperación de evidencias y cadena de custodia para procesos legales.
+El catálogo se estructura en dominios de especialización técnica según el rol profesional:
 
-CPENT (Certified Penetration Testing Professional): Pruebas de penetración avanzadas en entornos complejos (IoT, OT, Cloud), superando el análisis de vulnerabilidades básico.
+* **CEH (Certified Ethical Hacker):** Metodología ofensiva basada en 5 fases: *Reconocimiento, Escaneo, Obtención de Acceso, Mantenimiento de Acceso y Borrado de Huellas*.
+* **CHFI (Computer Hacking Forensic Investigator):** Análisis forense digital, recuperación de evidencias técnicas y protocolos de cadena de custodia para procesos judiciales.
+* **CPENT (Certified Penetration Testing Professional):** Ejecución de pruebas de penetración avanzadas en infraestructuras complejas (IoT, Sistemas OT y Cloud).
+* **CCISO (Certified CISO):** Gestión ejecutiva enfocada en gobernanza, gestión de incidentes y cumplimiento normativo (*Compliance*).
 
-CCISO (Certified CISO): Orientado a la alta dirección; enfocado en gobernanza, gestión de incidentes y cumplimiento (compliance) en lugar de ejecución técnica.
+## 2. Infraestructura Técnica: iLabs
 
-2. Infraestructura de Aprendizaje: iLabs
-El valor diferencial de su formación es iLabs, una plataforma de virtualización en la nube que permite:
+Entorno de virtualización en la nube diseñado para el entrenamiento práctico:
 
-Acceso a más de 400 laboratorios prácticos.
+* **Laboratorios:** Acceso a más de 400 escenarios de práctica.
+* **Simulación:** Redes y sistemas operativos preconfigurados para vectores de ataque y defensa.
+* **Arquitectura:** Entorno *Sandbox* aislado que garantiza la integridad del hardware físico del estudiante.
 
-Sistemas operativos y redes preconfiguradas para ataques y defensa en tiempo real.
+## 3. Validaciones y Acreditaciones Internacionales
 
-Entorno "Sandbox" que elimina el riesgo de daño a hardware físico durante las prácticas.
+La validez técnica de EC-Council está respaldada por organismos de estandarización global:
 
-3. Acreditaciones y Cumplimiento (Compliance)
-La relevancia de EC-Council no proviene del marketing, sino de sus validaciones externas:
+| Norma / Organismo | Descripción del Cumplimiento |
+| --- | --- |
+| **ANSI 17024** | Estándar internacional para organismos que certifican personas. |
+| **DoD 8140/8570** | Requisito normativo para el personal de ciberseguridad del Departamento de Defensa de EE. UU. |
+| **GCHQ (Reino Unido)** | Certificación de calidad académica emitida por el Cuartel General de Comunicaciones. |
 
-ANSI 17024: Sus exámenes cumplen con el estándar internacional para la certificación de personas.
+## 4. Metodología de Evaluación
 
-DoD 8140/8570: Sus certificaciones son requisitos obligatorios para contratistas y personal de ciberseguridad del Departamento de Defensa de los EE. UU.
+* **Evaluación Teórica:** Exámenes de opción múltiple distribuidos vía *ECC Exam* o centros *Pearson VUE*.
+* **Evaluación Práctica (Practical):** Sesiones de 6 horas en entornos reales donde el candidato debe resolver retos técnicos en vivo.
 
-GCHQ (Reino Unido): Sus cursos han recibido la certificación del Cuartel General de Comunicaciones del Gobierno británico.
+---
 
-4. Modelo de Examen
-Teórico: Exámenes de opción múltiple gestionados a través de su plataforma ECC Exam o centros Pearson VUE.
+## 🎓 Referencias Académicas e Institucionales
 
-Práctico (Dash): Variantes "Practical" de 6 horas donde el candidato debe resolver retos en vivo dentro de un entorno de red real para obtener el título de "Master".
+Recursos oficiales para la validación de currículos y registro de competencias:
 
-## 🎓 Referencias
+* **[Sitio Institucional (Oficial)](https://www.eccouncil.org/):** Repositorio de currículos, dominios de examen y estándares de certificación.
+* **[Portal de Registro Académico](https://www.eccouncil.org/get-certified-with-ec-council-with-form/?utm_source=ecc-menu&utm_medium=header&utm_campaign=ecc-menu-header):** Canal oficial para el proceso de admisión, registro de aspirantes y consulta de rutas académicas.
 
-algunas referencias oficiales de **EC-Council** para la validación de competencias en seguridad de la información:
-
-1.  **Sitio Institucional:** [https://www.eccouncil.org/](https://www.eccouncil.org/)
-    * Provee los currículos de certificaciones como CEH, CHFI y CCISO.
-2.  **Registro de Aspirantes:** [Get Certified with EC-Council](https://www.eccouncil.org/get-certified-with-ec-council-with-form/?utm_source=ecc-menu&utm_medium=header&utm_campaign=ecc-menu-header)
-    * Canal oficial para la obtención de información detallada sobre rutas de certificación.
-
+---
+ 
