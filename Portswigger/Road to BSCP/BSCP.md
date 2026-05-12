@@ -109,6 +109,7 @@ http://192.168.0.[intruder_payload]:6566
 1. **Suscripción:** Burp Suite Professional (Obligatorio).
 2. **Sistema:** Cumplir con los [Requisitos Técnicos](https://www.google.com/search?q=https://portswigger.net/web-security/certification/technical-requirements).
 3. **Preparación:** Completar los niveles "Practitioner" de la Web Security Academy.
+4. ** si no apruebas:  ** recomiendan lo siguiente https://portswigger.net/web-security/certification/exam-hints-and-guidance/retaking-your-exam
 
 ---
 
